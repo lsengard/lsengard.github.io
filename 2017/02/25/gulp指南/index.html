@@ -3,26 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>钱塘春晓 | MyStroy</title>
+  <title>gulp指南 | MyStroy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="MickYang's Blog" />
   
-  <meta name="description" content="西湖只能说我到杭州的不是时候，正好赶上峰会建设时期，对此不多评论。想好好看风景的心情是比可以理解的，但往往都是事与愿违。不过好在第二天下雨了，雨过杭州，风清气爽。到西湖时候桃花的花期好没过，西湖边上有种品种很奇怪的桃花，一个枝上了两种颜色的花，一红一白很是漂亮。有幸看到了柳浪，不过没有闻莺。">
-<meta name="keywords" content="游记">
+  <meta name="description" content="说在前面Gulp是基于Node.js的自动任务运行器，它能自动化地完成js/sass/less/html/image/css等文件的的测试、检查、合并、压缩、格式化、浏览器自动刷新、部署文件生成，并监听文件在改动后重复指定的这些步骤。在实现上，它借鉴了Unix操作系统的管道（pipe）思想，前一级的输出，直接变成后一级的输入，使得在操作上非常简单。通过这篇文章，我们将使用Gulp来改变开发流程，从">
+<meta name="keywords" content="gulp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="钱塘春晓">
-<meta property="og:url" content="/2016/05/07/钱塘春晓/index.html">
+<meta property="og:title" content="gulp指南">
+<meta property="og:url" content="/2017/02/25/gulp指南/index.html">
 <meta property="og:site_name" content="MyStroy">
-<meta property="og:description" content="西湖只能说我到杭州的不是时候，正好赶上峰会建设时期，对此不多评论。想好好看风景的心情是比可以理解的，但往往都是事与愿违。不过好在第二天下雨了，雨过杭州，风清气爽。到西湖时候桃花的花期好没过，西湖边上有种品种很奇怪的桃花，一个枝上了两种颜色的花，一红一白很是漂亮。有幸看到了柳浪，不过没有闻莺。">
+<meta property="og:description" content="说在前面Gulp是基于Node.js的自动任务运行器，它能自动化地完成js/sass/less/html/image/css等文件的的测试、检查、合并、压缩、格式化、浏览器自动刷新、部署文件生成，并监听文件在改动后重复指定的这些步骤。在实现上，它借鉴了Unix操作系统的管道（pipe）思想，前一级的输出，直接变成后一级的输入，使得在操作上非常简单。通过这篇文章，我们将使用Gulp来改变开发流程，从">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://7xj892.com1.z0.glb.clouddn.com/XiHu.JPG">
-<meta property="og:image" content="http://7xj892.com1.z0.glb.clouddn.com/HuXueYanGuJu.jpg">
-<meta property="og:updated_time" content="2018-01-04T13:07:07.520Z">
+<meta property="og:updated_time" content="2018-01-31T14:12:35.517Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="钱塘春晓">
-<meta name="twitter:description" content="西湖只能说我到杭州的不是时候，正好赶上峰会建设时期，对此不多评论。想好好看风景的心情是比可以理解的，但往往都是事与愿违。不过好在第二天下雨了，雨过杭州，风清气爽。到西湖时候桃花的花期好没过，西湖边上有种品种很奇怪的桃花，一个枝上了两种颜色的花，一红一白很是漂亮。有幸看到了柳浪，不过没有闻莺。">
-<meta name="twitter:image" content="http://7xj892.com1.z0.glb.clouddn.com/XiHu.JPG">
+<meta name="twitter:title" content="gulp指南">
+<meta name="twitter:description" content="说在前面Gulp是基于Node.js的自动任务运行器，它能自动化地完成js/sass/less/html/image/css等文件的的测试、检查、合并、压缩、格式化、浏览器自动刷新、部署文件生成，并监听文件在改动后重复指定的这些步骤。在实现上，它借鉴了Unix操作系统的管道（pipe）思想，前一级的输出，直接变成后一级的输入，使得在操作上非常简单。通过这篇文章，我们将使用Gulp来改变开发流程，从">
   
   
     <link rel="icon" href="/favicon.png">
@@ -112,20 +109,20 @@
     </div>
 </header>
       <div class="outer">
-        <section id="main" class="body-wrap"><article id="post-钱塘春晓" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main" class="body-wrap"><article id="post-gulp指南" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="post-title" itemprop="name">
-      钱塘春晓
+      gulp指南
     </h1>
     <div class="post-title-bar">
       <ul>
           
         <li>
-          <i class="fa fa-calendar"></i>  2016-05-07
+          <i class="fa fa-calendar"></i>  2017-02-25
         </li>
         <li>
           <i class="fa fa-eye"></i>
@@ -141,17 +138,21 @@
     <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <h3 id="西湖"><a href="#西湖" class="headerlink" title="西湖"></a>西湖</h3><p>只能说我到杭州的不是时候，正好赶上峰会建设时期，对此不多评论。想好好看风景的心情是比可以理解的，但往往都是事与愿违。不过好在第二天下雨了，雨过杭州，风清气爽。到西湖时候桃花的花期好没过，西湖边上有种品种很奇怪的桃花，一个枝上了两种颜色的花，一红一白很是漂亮。有幸看到了柳浪，不过没有闻莺。<br><a id="more"></a><br><img src="http://7xj892.com1.z0.glb.clouddn.com/XiHu.JPG" alt="西湖苏堤"></p>
-<p>绕湖一周，果然西湖非常大。只是这个季节人比较多。有山水有生活在这里真是惬意。</p>
-<p>分割线——————————————</p>
-<p>头天夜里下了场雨，雨后的杭州，还是很美的。约上同行的朋友去了胡雪岩故居。<br>一路走在杭州的路上，虽然杭州也有很多高架环城路之类的，但是因为比较是南方水比较多，所以，基本在这样的情况下我们大部分时间都是在河边边走边聊的。到了目的地之后，一场雨又不期而至。</p>
-<p><img src="http://7xj892.com1.z0.glb.clouddn.com/HuXueYanGuJu.jpg" alt="胡雪岩故居"></p>
-<p>这个故居可以说是江南富商住宅的代表，高高竖起的院前隔绝了院中的世界，它仿佛独立于外面的世界，百年之后它依然是当时的样子，也许时间一直都停在那里从未前进过。<br>因为峰会的缘故我并没有在杭州停留太长时间，之前的董姑娘问我要不要去西塘，我就答应下来准备转战西塘。对于杭州也许等峰会过后我还会回来看看吧，也说不定。</p>
+            <h2 id="说在前面"><a href="#说在前面" class="headerlink" title="说在前面"></a>说在前面</h2><p>Gulp是基于Node.js的自动任务运行器，它能自动化地完成js/sass/less/html/image/css等文件的的测试、检查、合并、压缩、格式化、浏览器自动刷新、部署文件生成，并监听文件在改动后重复指定的这些步骤。在实现上，它借鉴了Unix操作系统的管道（pipe）思想，前一级的输出，直接变成后一级的输入，使得在操作上非常简单。通过这篇文章，我们将使用Gulp来改变开发流程，从而使开发更加快速高效。</p>
+<a id="more"></a>
+<h2 id="一、安装gulp"><a href="#一、安装gulp" class="headerlink" title="一、安装gulp"></a>一、安装gulp</h2><p>在此之前我们需要Node.js环境，查看安装方法<a href="http://www.runoob.com/nodejs/nodejs-tutorial.html" target="_blank" rel="noopener">请查阅</a>。</p>
+<p>首先我们进行全局安装，这样是为了通过执行<code>gulp</code>命令来进行任务。<br>我们通过<code>npm</code>来进行安装<code>npm install gulp -g</code>。稍等片刻，等待下载完成你可以用<code>gulp -v</code>来测试是否安装成功。如果在控制台看到了版本号，就证明你安装成功；</p>
+<p>然后我们执行<code>npm install gulp --save-dev</code>进行本地安装。这里就有个问题：全局安装了，本地也安装了，这是为什么？那是因为全局安装为了方便执行<code>gulp</code>任务，本地安装是方便调用<code>gulp</code>插件的功能。</p>
+<p>这里我们用到了一个<code>gulp</code>的插件<code>gulp-less</code>，就是这个插件来帮我们完成less编译工作。<br>我们同样用<code>npm</code>安装它，<code>npm install gulp-less --save-dev</code>。</p>
+<h2 id="二、创建gulpfile-js文件"><a href="#二、创建gulpfile-js文件" class="headerlink" title="二、创建gulpfile.js文件"></a>二、创建gulpfile.js文件</h2><p><code>gulpfile.js</code>是<code>gulp</code>项目中的配置文件，位于项目根目录里的普通的js文件。<br>这个文件一般长这样：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// gulp 配置</span></span><br><span class="line"><span class="comment">//导入工具包 require('node_modules里对应模块')</span></span><br><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>),</span><br><span class="line">    less = <span class="built_in">require</span>(<span class="string">'gulp-less'</span>); <span class="comment">//之前下载好的less插件</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//定义一个test任务（自定义任务名称）</span></span><br><span class="line">gulp.task(<span class="string">'runless'</span>,<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    gulp.src(<span class="string">'src/less/style.less'</span>)</span><br><span class="line">        .pipe(less())</span><br><span class="line">        .pipe(gulp.dest(<span class="string">'src/css'</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'default'</span>,[<span class="string">'runLess'</span>]); <span class="comment">//默认执行gulp时，进行数组队列中的任务</span></span><br></pre></td></tr></table></figure></p>
+<p>这是我们执行<code>glup</code>就会发现在项目的<code>src/css</code>中出现一个<code>style.css</code>的文件。这时候<code>gulp</code>就帮助我们完成了less文件的编译。<br>不过还没完，这时候你会发现，每次修改完样式都要执行<code>gulp</code>指令，这看起来十分不方便，但是不用担心我们增加一项任务让<code>gulp</code>在发现我们修改后自动编译，这时候我们只需要增加一项任务：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//监听文件修改，一旦进行过修改则立刻执行对应的task</span></span><br><span class="line">gulp.task(<span class="string">'watch'</span>,<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    gulp.watch(<span class="string">'src/**/*.less'</span>,[<span class="string">'runless'</span>]);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p>这样它就会去监听<code>src</code>下的所有less文件，一旦有修改自动编译。</p>
+<h2 id="三、总结"><a href="#三、总结" class="headerlink" title="三、总结"></a>三、总结</h2><p>简单介绍了一下<code>gulp</code>的工作流程，之后会陆续的增加一些新的配置到文章中去。</p>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年01月04日 21:07</p>
-        <p>原始链接： <a class="post-url" href="/2016/05/07/钱塘春晓/" title="钱塘春晓">/2016/05/07/钱塘春晓/</a></p>
+        <p>最后更新： 2018年01月31日 22:12</p>
+        <p>原始链接： <a class="post-url" href="/2017/02/25/gulp指南/" title="gulp指南">/2017/02/25/gulp指南/</a></p>
         <footer>
             <a href="">
                 <img src="/images/logo.jpg" alt="Mick Yang">
@@ -177,7 +178,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=/2016/05/07/钱塘春晓/&title=《钱塘春晓》 — MyStroy&pic=images/logo.jpg" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=/2017/02/25/gulp指南/&title=《gulp指南》 — MyStroy&pic=https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1517417574059&di=c49bc5f253813607c351c86f6cd6c689&imgtype=0&src=http%3A%2F%2Fwww.th7.cn%2Fd%2Ffile%2Fp%2F2016%2F06%2F22%2F640f7e3d4f9c3e15118911d87c1ce5c9.jpg" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -187,22 +188,22 @@
             </a>
           </li>
           <li>
-            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=/2016/05/07/钱塘春晓/&title=《钱塘春晓》 — MyStroy&source=西湖只能说我到杭州的不是时候，正好赶上峰会建设时期，对此不多评论。想好好看风景的心情是比可以理解的，但往往都是事与愿违。不过好在第二天下雨了，雨过杭州，风..." data-title="QQ">
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=/2017/02/25/gulp指南/&title=《gulp指南》 — MyStroy&source=说在前面Gulp是基于Node.js的自动任务运行器，它能自动化地完成js/sass/less/html/image/css等文件的的测试、检查、合并、压..." data-title="QQ">
               <i class="fa fa-qq"></i>
             </a>
           </li>
           <li>
-            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=/2016/05/07/钱塘春晓/" data-title="Facebook">
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=/2017/02/25/gulp指南/" data-title="Facebook">
               <i class="fa fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《钱塘春晓》 — MyStroy&url=/2016/05/07/钱塘春晓/&via=" data-title="Twitter">
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《gulp指南》 — MyStroy&url=/2017/02/25/gulp指南/&via=" data-title="Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=/2016/05/07/钱塘春晓/" data-title="Google+">
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=/2017/02/25/gulp指南/" data-title="Google+">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -212,7 +213,7 @@
 <div class="post-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" id="wxShare-close">×</a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=/2016/05/07/钱塘春晓/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=/2017/02/25/gulp指南/" alt="微信分享二维码">
 </div>
 
 <div class="mask"></div>
@@ -224,7 +225,7 @@
   <li class="article-footer-tags">
     <i class="fa fa-tags"></i>
       
-    <a href="/tags/游记/" class="color3">游记</a>
+    <a href="/tags/gulp/" class="color5">gulp</a>
       
   </li>
 
@@ -237,26 +238,26 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#西湖"><span class="post-toc-text">西湖</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#说在前面"><span class="post-toc-text">说在前面</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一、安装gulp"><span class="post-toc-text">一、安装gulp</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二、创建gulpfile-js文件"><span class="post-toc-text">二、创建gulpfile.js文件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三、总结"><span class="post-toc-text">三、总结</span></a></li></ol>
         </nav>
     </aside>
     
 
 <nav id="article-nav">
   
-    <a href="/2016/05/25/西塘雨落/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/04/17/Vue/" id="article-nav-newer" class="article-nav-link-wrap">
 
       <span class="article-nav-title">
         <i class="fa fa-hand-o-left" aria-hidden="true"></i>
         
-          西塘雨落
+          vue实现增删改查
         
       </span>
     </a>
   
   
-    <a href="/2016/04/25/印象姑苏/" id="article-nav-older" class="article-nav-link-wrap">
-      <span class="article-nav-title">印象姑苏</span>
+    <a href="/2017/01/13/git简易指南/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">git简易指南</span>
       <i class="fa fa-hand-o-right" aria-hidden="true"></i>
     </a>
   
